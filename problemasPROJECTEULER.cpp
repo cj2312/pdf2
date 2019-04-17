@@ -87,7 +87,7 @@ void print(int * arr,int t){
     }cout<<endl;
 }*/
 //problem 4----------------------
-bool palindromo(int n){
+bool esPalindromo(int n){
     int aux,resto,numInv=0;
     aux=n;
     while(aux>0){
@@ -101,12 +101,13 @@ bool palindromo(int n){
     else
        return false;
 }
-int mayorpalin(){
-    int mayor=0;
-    for(int i=100;i<102;i++){
-        for(int j=100;j<102;j++){
-           mayor=i*j;
-           cout<<i<<"x"<<j<<"="<<mayor<<endl;
+int largestP(){
+    int m;
+    for(int i=100;i<999;i++){
+        for(int j=100;j<999;j++){
+           m=i*j;
+           if(esPalindromo(m))
+                cout<<i<<"x"<<j<<"="<<mayor<<endl;
         }
     }
 return 0;
